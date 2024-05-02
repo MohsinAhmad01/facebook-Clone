@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook-clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"  />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" >
+</head>
+<body>
+  
+  <div class="container-fluid  px-0 fb">
+    <div class="row">
+        <div class="col">
+            <div class="nav-size">
+                <nav class="navbar navbar-expand-lg ">
+                    <div class="container-fluid px-0">
+                        <a class="navbar-brand" href="#"><img src="assets/facebook.png" alt=""></a>
+                        <form class="d-flex serach-btn" role="search">
+                          <div class="search-nav"> 
+                            <input class="form-control me-2" type="search" placeholder="Search Facebook" aria-label="Search">
+                            <i class=" search-icon fa-solid fa-magnifying-glass"></i>
+                          </div>
+                        </form>
+                        <div class="nav-item d-flex justify-content-between">
+                          <a class="nav-link home" href="#"><img src="assets/home.png" alt="" style="margin-left: 30px;" width="auto" height="30px"></a>
+                          <a class="nav-link friend " href="#"><img src="assets/friends.png" alt="" width="auto" height="30px"></a>
+                          <a class="nav-link videoss" href="#"><img src="assets/videos.png" alt="" width="auto" height="30px"></a>
+                          <a class="nav-link market" href="#"><img src="assets/marketplace.png" alt="" width="auto" height="30px">
+                          <a class="nav-link game" href="#"><img src="assets/game.png" alt=""width="auto"  height="30px" >
+                        </div>
+                    
+                 <div class="nav-left me-3 d-flex">
+                  <ul class="navbar-nav  ">
+                    <li class="nav-items" ><a href="#" id="toggleSidebar"><img src="assets/menu.png" alt="" style="margin-right: 10px; " width="auto" height="20px"></a>
+                    </li>
+                  <li class="nav-items mess-not"><a href="#"><img src="assets/messenger.png" alt=""width="auto" height="20px" style="  margin-top: 20px;  margin-right: 10px;"></a></li>
+                <li class="nav-items mess-not"><a href="#"><img src="assets/notification.png" alt=""width="auto" height="20px"style="margin-right: 10px; margin-top: 20px;" ></a></li>
+              </ul>
+              <!-- profile-pic --> <!-- profile-pic --> <!-- profile-pic --> <!-- profile-pic --> <!-- profile-pic -->
+                <div class="nav-items  " onclick="openCard()">
+                  <a href="#"><img src="assets/my-pic.jpeg" alt="" style="border-radius:50%; margin-top: 10px;  height: 30px; width: auto;"></a>
+                </div>       
+                   <div class="card-menu-wrap" id="cardWrap">
+                    <div class="card-menu">
+                      <div class="profile-menu">
+                        <img src="assets/my-pic.jpeg" style="height: 40px;margin-left: 10px; border-radius: 45%; width: auto;" alt="">
+                        <p style="margin: 10px  ;">mohsin ahmad</p>
+                      </div>
+                      <a href="#" class="card-menu-items">
+                        <img src="assets/setting-privacy.png" alt="" width="auto" height="30px">
+                        <p style="margin: 10px  ;">setting and privacy</p>
+                        
+                      </a>
+                      <a href="#" class="card-menu-items">
+                        <img src="assets/help and support (1).png" alt=""width="auto" height="30px">
+                        <p style="margin: 10px  ;">help and support</p>
+                        
+                      </a>
+                      <a href="#" class="card-menu-items">
+                        <img src="assets/dark-mode.png" alt=""width="auto" height="30px">
+                        <p style="margin: 10px  ;">display and accessability</p>
+                        
+                      </a>
+                      <a href="#" class="card-menu-items">
+                        <img src="assets/feedback.png" alt=""width="auto" height="30px">
+                        <p style="margin: 10px  ;">give feedback</p>
+                        
+                      </a>
+                      <a href="#" class="card-menu-items">
+                        <img src="assets/logout.PNG" alt=""width="auto" height="30px">
+                        <p style="margin: 10px  ;">logout</p>
+                      </a>
+                    </div>
+                   </div>
+              
+              </div>
+
+            </div>
+          </nav>
+        </div>
+     </div>
+   </div>
+  </div>
+  
+  
+
+<div class="main">
+
+
+ <div class="main-left show">
+  <div class="img">
+    <img src="assets/my-pic.jpeg" alt="profile picture"/>
+    <p>Mohsin ahmad</p>
+  </div>
+  <div class="img">
+    <img src="assets/friends.png" alt="profile picture"/>
+    <p>Find friends</p>
+  </div>
+  <div class="img">
+    <img src="assets/memories.png" alt="profile picture"/>
+    <p>Memories</p>
+  </div>
+  <div class="img">
+    <img src="assets/saved.png" alt="profile picture"/>
+    <p>Saved</p>
+  </div>
+  <div class="img">
+    <img src="assets/groups.png" alt="profile picture"/>
+    <p>Groups</p>
+  </div>
+  <div class="img">
+    <img src="assets/videos.png" alt="profile picture"/>
+    <p>Video</p>
+  </div>
+  <hr>
+  <div class="img">
+    <img src="assets/marketplace.png" alt="profile picture"/>
+    <p>Marketplace</p>
+  </div>
+  <div class="img">
+    <img src="assets/feeds.png" alt="profile picture"/>
+    <p>Feeds</p>
+  </div>
+  <div class="img">
+    <img src="assets/events.png" alt="profile picture"/>
+    <p>Events</p>
+  </div>
+  <div class="img">
+    <img src="assets/ads manager.png" alt="profile picture"/>
+    <p>Ads Manager</p>
+  </div>
+  <div class="img">
+    <img src="assets/red-heat.PNG" alt="profile picture"/>
+    <p>Fundraisers</p>
+  </div>
+  <div class="img">
+    <img src="assets/down-arrow.png" alt="profile picture"/>
+    <p>see more</p>
+  </div>
+  <hr>
+  <div class="shortcut">
+    <p>shortcut games</p>
+  </div>
+  <div class="img">
+    <img src="assets/pubg.png" alt="profile picture"/>
+    <p>Pubg mobile</p>
+  </div>
+  <div class="img">
+    <img src="assets/subway-surfer.png" alt="profile picture"/>
+    <p>subway-surfer</p>
+  </div>
+  <div class="img">
+    <img src="assets/candy-crush.png" alt="profile picture"/>
+    <p>candy-crush</p>
+  </div>
+ </div> 
+
+
+<div class="center-section">
+  <div class="top-box ">
+    <div class="stories">
+      <img src="assets/my-pic.jpeg" alt="">
+      <div class="upload-icon">
+        <img src="assets/plus.png" alt="">
+        <p >Add Your Story</p>
+      </div>
+    </div>
+    <div class="friends-story">
+      <img src="assets/bashir.jpeg" alt="">
+        <div class="friend-profile">
+          <img src="assets/bashir.jpeg" alt="">
+          <div class="online"></div>
+        </div>
+        <div class="friend-name">
+          <p>Bashir Khogyani</p>
+        </div>
+    </div>
+    <div class="friends-story">
+      <img src="assets/irfan-ullah.jpeg" alt="">
+        <div class="friend-profile">
+          <img src="assets/irfan-ullah.jpeg" alt="">
+          <div class="online"></div>
+        </div>
+        <div class="friend-name">
+          <p>Irfan-Ullah</p>
+        </div>
+    </div>
+    <div class="friends-story">
+      <img src="assets/junaid.jpeg" alt="">
+        <div class="friend-profile">
+          <img src="assets/junaid.jpeg" alt="">
+          <div class="online"></div>
+        </div>
+        <div class="friend-name">
+          <p>Junaid Khan</p>
+        </div>
+    </div>
+  </div>
+
+
+<div class="positing-sec">
+  <div class="post-top">
+    <img src="assets/my-pic.jpeg" alt="">
+    <input type="text" placeholder="What's in your mind">
+  </div>
+  <hr>
+  <div class="post-bottom">
+    <div class="post-icon">
+      <img src="assets/videos.png" alt="">
+      <p>live video</p>
+    </div>
+    <div class="post-icon">
+      <img src="assets/photos (1).png" alt="">
+      <p>Photos <br> Videos</p>
+    </div>
+    <div class="post-icon">
+      <img src="assets/happy-icon.png" alt="">
+      <p>Feeling <br> activity</p>
+    </div>
+  </div>
+</div>
+
+ <div class="create-post" id="okk">
+  <div class="post-friends">
+    <div class="img-name">
+      <img src="assets/bashir.jpeg" alt="">
+      <div class="friend-name">
+        <p class="post-of"> BashirKhogyani <br><span class="time">2h ago</span> </p>
+        
+
+      </div>
+    </div>
+             <div class="posting-part">
+             <i class="fa-solid fa-ellipsis"></i>  
+            </div>
+  </div>
+  <img src="assets/fawad.jpeg" alt="" >
+  <div class="info">
+       <div class="post-emojis">
+        <img src="assets/like.png" alt="">
+        <img src="assets/heart.png" alt="">
+        <img src="assets/funny.png" alt="">
+        <p >you and 2k people others</p>
+       </div>
+       <div class="comment">
+        <p>21 comment</p>
+        <p >20 Shares</p>
+       </div>
+  </div>
+  <hr>
+  <div class="like">
+    <div class="like-icon">
+      <!-- Your like icon here -->
+    </div>
+    <div class="like-button">
+      <div class="like-button1">
+        <img src="assets/like.png" alt="" >
+      <p>Like</p>
+      </div>
+      
+      <div class="like-button2">
+        <img src="assets/comment.png" alt="">
+      <p>Comment</p>
+      </div>
+      <div class="like-button3">
+        <img src="assets/comment.png" alt="">
+      <p>Share</p>
+      </div>
+    </div>
+  </div>
+  
+ </div>
+
+
+ <div class="create-post">
+  <div class="post-friends">
+    <div class="img-name">
+      <img src="assets/irfan-ullah.jpeg" alt="">
+      <div class="friend-name">
+        <p class="post-of"> IrfanUllah <br><span class="time">2h ago</span> </p>
+      </div>
+    </div>
+             <div class="posting-part">
+             <i class="fa-solid fa-ellipsis"></i> 
+            </div>
+  </div>
+  <img src="assets/irfan-ullah.jpeg" alt="">
+  <div class="info">
+    <div class="post-emojis">
+         <img src="assets/like.png" alt="">
+         <img src="assets/heart.png" alt="">
+         <img src="assets/funny.png" alt="">
+         <p>you and 2kothers</p>
+    </div>
+    <div class="comment">
+         <p>21comments</p>
+         <p>20Shares</p>
+    </div>
+ </div>
+  <hr>
+  <div class="like">
+    <div class="like-button">
+      <div class="like-button1">
+        <img src="assets/like.png" alt="" >
+      <p>Like</p>
+      </div>
+      
+      <div class="like-button2">
+        <img src="assets/comment.png" alt="">
+      <p>Comment</p>
+      </div>
+      <div class="like-button3">
+        <img src="assets/comment.png" alt="">
+      <p>Share</p>
+      </div>
+    </div>
+  </div>
+ </div>
+
+ <div class="create-post">
+  <div class="post-friends">
+    <div class="img-name">
+      <img src="assets/junaid.jpeg" alt="">
+      <div class="friend-name">
+        <p class="post-of">junaidkhan <br><span class="time">2h ago</span> </p>
+        
+
+      </div>
+    </div>
+             <div class="posting-part">
+             <i class="fa-solid fa-ellipsis"></i>  
+            </div>
+  </div>
+  <img src="assets/junaid.jpeg" alt="">
+  <div class="info">
+       <div class="post-emojis">
+        <img src="assets/like.png" alt="">
+        <img src="assets/heart.png" alt="">
+        <img src="assets/funny.png" alt="">
+        <p style="font-size: 13px; font-weight: 300; ">you and 2k people others</p>
+       </div>
+       <div class="comment">
+        <p>21 comment</p>
+        <p style="margin-left: 40px;">20 Shares</p>
+       </div>
+  </div>
+  <hr>
+  <div class="like">
+    <div class="like-icon">
+      <!-- Your like icon here -->
+    </div>
+    <div class="like-button">
+      <div class="like-button1">
+        <img src="assets/like.png" alt="" >
+      <p>Like</p>
+      </div>
+      
+      <div class="like-button2">
+        <img src="assets/comment.png" alt="">
+      <p>Comment</p>
+      </div>
+      <div class="like-button3">
+        <img src="assets/comment.png" alt="">
+      <p>Share</p>
+      </div>
+    </div>
+  </div>
+  
+ </div>
+
+ <div class="create-post">
+  <div class="post-friends">
+    <div class="img-name">
+      <img src="assets/hammas.jpeg" alt="">
+      <div class="friend-name">
+        <p class="post-of">hammas-ul-mulk <br><span class="time">2h ago</span> </p>
+        
+
+      </div>
+    </div>
+             <div class="posting-part">
+             <i class="fa-solid fa-ellipsis"></i>  
+            </div>
+  </div>
+  <img src="assets/hammas.jpeg" alt="">
+  <div class="info">
+       <div class="post-emojis">
+        <img src="assets/like.png" alt="">
+        <img src="assets/heart.png" alt="">
+        <img src="assets/funny.png" alt="">
+        <p style="font-size: 13px; font-weight: 300; ">you and 2k people others</p>
+       </div>
+       <div class="comment">
+        <p>21 comment</p>
+        <p style="margin-left: 40px;">20 Shares</p>
+       </div>
+  </div>
+  <hr>
+  <div class="like">
+    <div class="like-icon">
+      <!-- Your like icon here -->
+    </div>
+    <div class="like-button">
+      <div class="like-button1">
+        <img src="assets/like.png" alt="" >
+      <p>Like</p>
+      </div>
+      
+      <div class="like-button2">
+        <img src="assets/comment.png" alt="">
+      <p>Comment</p>
+      </div>
+      <div class="like-button3">
+        <img src="assets/comment.png" alt="">
+      <p>Share</p>
+      </div>
+    </div>
+  </div>
+  
+ </div>
+
+
+ <div class="create-post">
+  <div class="post-friends">
+    <div class="img-name">
+      <img src="assets/abbas.jpeg" alt="">
+      <div class="friend-name">
+        <p class="post-of">Abbaskhan <br><span class="time">2h ago</span> </p>
+        
+
+      </div>
+    </div>
+             <div class="posting-part">
+             <i class="fa-solid fa-ellipsis"></i>  
+            </div>
+  </div>
+  <img src="assets/abbas.jpeg" alt="">
+  <div class="info">
+       <div class="post-emojis">
+        <img src="assets/like.png" alt="">
+        <img src="assets/heart.png" alt="">
+        <img src="assets/funny.png" alt="">
+        <p style="font-size: 13px; font-weight: 300; ">you and 2k people others</p>
+       </div>
+       <div class="comment">
+        <p>21 comment</p>
+        <p style="margin-left: 40px;">20 Shares</p>
+       </div>
+  </div>
+  <hr>
+  <div class="like">
+    <div class="like-icon">
+      <!-- Your like icon here -->
+    </div>
+    <div class="like-button">
+      <div class="like-button1">
+        <img src="assets/like.png" alt="" >
+      <p>Like</p>
+      </div>
+      
+      <div class="like-button2">
+        <img src="assets/comment.png" alt="">
+      <p>Comment</p>
+      </div>
+      <div class="like-button3">
+        <img src="assets/comment.png" alt="">
+      <p>Share</p>
+      </div>
+    </div>
+  </div>
+  
+ </div>
+
+ <div class="create-post">
+  <div class="post-friends">
+    <div class="img-name">
+      <img src="assets/athar.jpeg" alt="">
+      <div class="friend-name">
+        <p class="post-of">Atharkhan<br><span class="time">2h ago</span> </p>
+        
+
+      </div>
+    </div>
+             <div class="posting-part">
+             <i class="fa-solid fa-ellipsis"></i>  
+            </div>
+  </div>
+  <img src="assets/athar.jpeg"  alt="">
+  <div class="info">
+       <div class="post-emojis">
+        <img src="assets/like.png" alt="">
+        <img src="assets/heart.png" alt="">
+        <img src="assets/funny.png" alt="">
+        <p style="font-size: 13px; font-weight: 300; ">you and 2k people others</p>
+       </div>
+       <div class="comment">
+        <p>21 comment</p>
+        <p style="margin-left: 40px;">20 Shares</p>
+       </div>
+  </div>
+  <hr>
+  <div class="like">
+    <div class="like-icon">
+      <!-- Your like icon here -->
+    </div>
+    <div class="like-button">
+      <div class="like-button1">
+        <img src="assets/like.png" alt="" >
+      <p>Like</p>
+      </div>
+      
+      <div class="like-button2">
+        <img src="assets/comment.png" alt="">
+      <p>Comment</p>
+      </div>
+      <div class="like-button3">
+        <img src="assets/comment.png" alt="">
+      <p>Share</p>
+      </div>
+    </div>
+  </div>
+  
+ </div>
+
+
+</div>
+<!--right side-bar-code--> <!--right side-bar-code--> <!--right side-bar-code--> <!--right side-bar-code-->
+<div class="main-right">
+  <div class="sponser">
+    <h4>sponsored</h4>
+    <div class="sponsored-links">
+      <img src="assets/sponser.jpg" alt="">
+      <p>online advertisment<br>
+      <a href="">onlineadvertisment</a></p>
+    </div>
+    <div class="sponsored-links">
+      <img src="assets/sponser-2.jpg" alt="">
+      <p>online advertisment<br>
+      <a href="">onlineadvertisment</a></p>
+    </div>
+  </div>
+  <hr>
+  <div class="page-sec">
+    <h4>your pages and profiles</h4>
+    
+    <div class="img">
+      <img src="assets/my-pic.jpeg" alt="profile picture"/>
+      <p>Mohsin ahmad</p>
+    </div>
+    <div class="page-link">
+    <div class="page-link-item">
+      <img src="assets/switch.PNG" alt="switch to page"/>
+      <p>Switch to page</p>
+    </div>
+    <div class="page-link-item">
+      <img src="assets/promotion.png" alt="promotion"/>
+      <p>create promotion</p>
+    </div>
+  </div>
+  </div>
+  <hr>
+    <div class="friend-sec">
+      <h4>Friend Request</h4>
+      <div class="friend-sec-items">
+        <img src="assets/fawad.jpeg" alt="">
+        <p>Fawad Khan</p>
+      </div>
+        <div class="button-friends-request">
+         <button type="submit" class="confirm">confirm</button>
+         <button type="submit" class="delete">delete</button>
+        </div>
+      <div class="friend-sec-items">
+        <img src="assets/irfan-ullah.jpeg" alt="">
+        <p>Irfan ullah</p>
+      </div>
+        <div class="button-friends-request">
+         <button type="submit" class="confirm">confirm</button>
+         <button type="submit" class="delete">delete</button>
+        </div>
+      <div class="friend-sec-items">
+        <img src="assets/hammas.jpeg" alt="">
+        <p>Hammas UL Mulk</p>
+      </div>
+        <div class="button-friends-request">
+         <button type="submit" class="confirm">confirm</button>
+         <button type="submit" class="delete">delete</button>
+        </div>
+        <hr>
+      </div>
+  
+      <div class="contact-sec">
+        <div class="contact-search">
+
+          <h4>Contacts</h4>
+        <img src="assets/search.png" alt="">
+       <img src="assets/down-arrow.png" alt="">  
+
+        </div>
+        <div class="contact-link-item">
+          <div class="online-show">
+            <img src="assets/fawad.jpeg" alt="" width="50px">
+          </div>
+          <p>Fawad Khan</p>
+        </div>
+        <div class="contact-link-item">
+          <div class="online-show">
+            <img src="assets/irfan-ullah.jpeg" alt="" width="50px">
+          </div>
+          <p>Irfan ullah</p>
+        </div>
+        <div class="contact-link-item">
+          <div class="online-show">
+            <img src="assets/junaid.jpeg" alt="" width="50px">
+          </div>
+          <p>Junaid Khan</p>
+        </div>
+        <div class="contact-link-item">
+          <div class="online-show">
+            <img src="assets/bashir.jpeg" alt="" width="50px">
+          </div>
+          <p>Bashir Khogyani</p>
+        </div>
+        <div class="contact-link-item">
+          <div class="online-show">
+            <img src="assets/athar.jpeg" alt="" width="50px">
+          </div>
+          <p>Athar Khan</p>
+        </div>
+        <div class="contact-link-item">
+          <div class="online-show">
+            <img src="assets/abbas.jpeg" alt="" width="50px">
+          </div>
+          <p>Abbas Khan</p>
+        </div>
+        <div class="contact-link-item">
+          <div class="online-show">
+            <img src="assets/hammas.jpeg" alt="" width="50px">
+          </div>
+          <p>Hammas UL Mulk</p>
+        </div>
+      </div>
+</div>
+
+
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
